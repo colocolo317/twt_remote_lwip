@@ -439,16 +439,6 @@
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/inc/netinet_in.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/inc/select.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/inc/select.h</locationURI>
-		</link>
-		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/inc/socket.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/inc/socket.h</locationURI>
-		</link>
-		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/inc/sys.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/inc/sys.h</locationURI>
@@ -457,16 +447,6 @@
 			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/inc/uio.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/inc/uio.h</locationURI>
-		</link>
-		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/si91x_socket/sl_si91x_bsd_socket.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/si91x_socket/sl_si91x_bsd_socket.c</locationURI>
-		</link>
-		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/service/bsd_socket/si91x_socket/sl_si91x_socket_support.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/bsd_socket/si91x_socket/sl_si91x_socket_support.h</locationURI>
 		</link>
 		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/inc/sl_net.h</name>
@@ -484,6 +464,11 @@
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/inc/sl_net_dns.h</locationURI>
 		</link>
 		<link>
+			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/inc/sl_net_for_lwip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/inc/sl_net_for_lwip.h</locationURI>
+		</link>
+		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/inc/sl_net_ip_types.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/inc/sl_net_ip_types.h</locationURI>
@@ -497,11 +482,6 @@
 			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/inc/sl_net_wifi_types.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/inc/sl_net_wifi_types.h</locationURI>
-		</link>
-		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/si91x/sl_net_si91x.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/si91x/sl_net_si91x.c</locationURI>
 		</link>
 		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/src/sl_net.c</name>
@@ -522,6 +502,11 @@
 			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/src/sl_net_basic_profiles.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/src/sl_net_basic_profiles.c</locationURI>
+		</link>
+		<link>
+			<name>wiseconnect3_sdk_3.2.0/components/service/network_manager/src/sl_net_for_lwip.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/service/network_manager/src/sl_net_for_lwip.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.4.3/util/third_party/freertos/cmsis/Include/freertos_mpool.h</name>
@@ -634,24 +619,159 @@
 			<locationURI>STUDIO_SDK_LOC/util/third_party/freertos/kernel/portable/MemMang/heap_4.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.c</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/api_lib.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/api_lib.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/api_msg.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/api_msg.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/icmp/sl_net_ping.c</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/err.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/icmp/sl_net_ping.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/err.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/icmp/sl_net_ping.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/if_api.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/icmp/sl_net_ping.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/if_api.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/netbuf.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/netbuf.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/netdb.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/netdb.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/netifapi.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/netifapi.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/sockets.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/sockets.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/api/tcpip.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/api/tcpip.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/altcp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/altcp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/altcp_alloc.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/altcp_alloc.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/altcp_tcp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/altcp_tcp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/def.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/def.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/dns.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/dns.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/inet_chksum.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/inet_chksum.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/init.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/init.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ip.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ip.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/mem.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/mem.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/memp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/memp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/netif.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/netif.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/pbuf.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/pbuf.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/raw.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/raw.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/stats.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/stats.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/sys.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/sys.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/tcp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/tcp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/tcp_in.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/tcp_in.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/tcp_out.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/tcp_out.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/timeouts.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/timeouts.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/udp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/udp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/netif/ethernet.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/netif/ethernet.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip-contrib/ports/freertos/sys_arch.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip-contrib/ports/freertos/sys_arch.c</locationURI>
 		</link>
 		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/inc/sl_rsi_utility.h</name>
@@ -742,6 +862,321 @@
 			<name>gecko_sdk_4.4.3/util/third_party/freertos/kernel/portable/GCC/ARM_CM4F/portmacro.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/util/third_party/freertos/kernel/portable/GCC/ARM_CM4F/portmacro.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/autoip.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/autoip.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/dhcp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/dhcp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/etharp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/etharp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/icmp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/icmp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/igmp.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/igmp.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/ip4.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/ip4.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/ip4_addr.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/ip4_addr.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/core/ipv4/ip4_frag.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/core/ipv4/ip4_frag.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/altcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/altcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/altcp_tcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/altcp_tcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/altcp_tls.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/altcp_tls.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/api.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/api.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/arch.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/arch.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/autoip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/autoip.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/debug.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/debug.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/def.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/def.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/dhcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/dhcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/dhcp6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/dhcp6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/dns.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/dns.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/err.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/err.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/errno.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/errno.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/etharp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/etharp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ethip6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ethip6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/icmp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/icmp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/icmp6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/icmp6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/if_api.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/if_api.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/igmp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/igmp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/inet.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/inet.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/inet_chksum.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/inet_chksum.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/init.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/init.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/init.h.cmake.in</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/init.h.cmake.in</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip4.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip4.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip4_addr.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip4_addr.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip4_frag.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip4_frag.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip6_addr.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip6_addr.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip6_frag.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip6_frag.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip6_zone.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip6_zone.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/ip_addr.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/ip_addr.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/mem.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/mem.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/memp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/memp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/mld6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/mld6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/nd6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/nd6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/netbuf.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/netbuf.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/netdb.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/netdb.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/netif.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/netif.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/netifapi.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/netifapi.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/opt.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/opt.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/pbuf.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/pbuf.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/raw.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/raw.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/sio.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/sio.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/snmp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/snmp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/sockets.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/sockets.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/stats.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/stats.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/sys.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/sys.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/tcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/tcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/tcpbase.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/tcpbase.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/tcpip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/tcpip.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/timeouts.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/timeouts.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/udp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/udp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/netif/etharp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/netif/etharp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/netif/ethernet.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/netif/ethernet.h</locationURI>
 		</link>
 		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/mcu/core/config/rsi_ccp_user_config.h</name>
@@ -919,16 +1354,6 @@
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/ahb_interface/src/sli_siwx917_soc.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/asynchronous_socket/inc/sl_si91x_socket.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/asynchronous_socket/inc/sl_si91x_socket.h</locationURI>
-		</link>
-		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/asynchronous_socket/src/sl_si91x_socket.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/asynchronous_socket/src/sl_si91x_socket.c</locationURI>
-		</link>
-		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/errno/inc/errno.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/errno/inc/errno.h</locationURI>
@@ -974,39 +1399,174 @@
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_si91x_net_credentials.c</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/sl_net/src/sl_si91x_net_internal_stack.c</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/altcp_priv.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_si91x_net_internal_stack.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/altcp_priv.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/inc/sl_bsd_utility.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/api_msg.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_bsd_utility.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/api_msg.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_callback_framework.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/mem_priv.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_callback_framework.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/mem_priv.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_constants.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/memp_priv.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_constants.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/memp_priv.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_types.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/memp_std.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_types.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/memp_std.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_utility.h</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/nd6_priv.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_utility.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/nd6_priv.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/wireless/socket/src/sl_si91x_socket_utility.c</name>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/raw_priv.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/src/sl_si91x_socket_utility.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/raw_priv.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/sockets_priv.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/sockets_priv.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/tcp_priv.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/tcp_priv.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/priv/tcpip_priv.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/priv/tcpip_priv.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/autoip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/autoip.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/dns.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/dns.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/etharp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/etharp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/ethernet.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/ethernet.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/iana.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/iana.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/icmp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/icmp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/icmp6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/icmp6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/ieee.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/ieee.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/igmp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/igmp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/ip.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/ip.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/ip4.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/ip4.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/ip6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/ip6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/mld6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/mld6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/nd6.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/nd6.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/tcp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/tcp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/lwip/prot/udp.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/lwip/prot/udp.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_impl.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_impl.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_opts.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_opts.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/bpstruct.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/bpstruct.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/cc.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/cc.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/epstruct.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/epstruct.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.4.3/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/sys_arch.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/sys_arch.h</locationURI>
 		</link>
 		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/device/silabs/si91x/mcu/core/chip/inc/RS1xxxx.h</name>

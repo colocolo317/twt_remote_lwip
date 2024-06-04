@@ -2,8 +2,8 @@
 <project name="uc.module.setup.componentSetup.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:12.2.1.20221205.gcc" propertyScope="project">
   <folder name="resources">
     <folder name="readme">
-      <file name="remoteapplicationprintssoc.png" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/resources/readme/remoteapplicationprintssoc.png"/>
-      <file name="twt_tcp_client_udp_client_soc_ncp.png" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/resources/readme/twt_tcp_client_udp_client_soc_ncp.png"/>
+      <file name="remoteapplicationprintssoc.png" linked="false" uri="studio:/project/resources/readme/remoteapplicationprintssoc.png"/>
+      <file name="twt_tcp_client_udp_client_soc_ncp.png" linked="false" uri="studio:/project/resources/readme/twt_tcp_client_udp_client_soc_ncp.png"/>
     </folder>
   </folder>
   <folder name="wiseconnect3_sdk_3.2.0">
@@ -210,14 +210,6 @@
               </folder>
             </folder>
             <folder name="wireless">
-              <folder name="asynchronous_socket">
-                <folder name="src">
-                  <file name="sl_si91x_socket.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/asynchronous_socket/src/sl_si91x_socket.c"/>
-                </folder>
-                <folder name="inc">
-                  <file name="sl_si91x_socket.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/asynchronous_socket/inc/sl_si91x_socket.h"/>
-                </folder>
-              </folder>
               <folder name="errno">
                 <folder name="src">
                   <file name="sl_si91x_errno.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/errno/src/sl_si91x_errno.c"/>
@@ -226,9 +218,19 @@
                   <file name="errno.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/errno/inc/errno.h"/>
                 </folder>
               </folder>
+              <folder name="memory">
+                <file name="mem_pool_buffer_quota.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/memory/mem_pool_buffer_quota.c"/>
+              </folder>
+              <folder name="src">
+                <file name="sl_si91x_driver.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_si91x_driver.c"/>
+                <file name="sl_rsi_utility.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_rsi_utility.c"/>
+                <file name="sl_si91x_callback_framework.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_si91x_callback_framework.c"/>
+              </folder>
+              <folder name="threading">
+                <file name="sli_si91x_multithreaded.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/threading/sli_si91x_multithreaded.c"/>
+              </folder>
               <folder name="sl_net">
                 <folder name="src">
-                  <file name="sl_si91x_net_internal_stack.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_si91x_net_internal_stack.c"/>
                   <file name="sl_net_rsi_utility.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_net_rsi_utility.c"/>
                   <file name="sl_net_si91x_integration_handler.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_net_si91x_integration_handler.c"/>
                   <file name="sl_si91x_net_credentials.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/src/sl_si91x_net_credentials.c"/>
@@ -238,37 +240,6 @@
                   <file name="sl_net_si91x_integration_handler.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/inc/sl_net_si91x_integration_handler.h"/>
                   <file name="sl_net_si91x.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/inc/sl_net_si91x.h"/>
                 </folder>
-              </folder>
-              <folder name="icmp">
-                <file name="sl_net_ping.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/icmp/sl_net_ping.c"/>
-                <file name="sl_net_ping.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/icmp/sl_net_ping.h"/>
-              </folder>
-              <folder name="firmware_upgrade">
-                <file name="firmware_upgradation.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.c"/>
-                <file name="firmware_upgradation.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/firmware_upgrade/firmware_upgradation.h"/>
-              </folder>
-              <folder name="memory">
-                <file name="mem_pool_buffer_quota.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/memory/mem_pool_buffer_quota.c"/>
-              </folder>
-              <folder name="socket">
-                <folder name="src">
-                  <file name="sl_si91x_socket_utility.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/src/sl_si91x_socket_utility.c"/>
-                </folder>
-                <folder name="inc">
-                  <file name="sl_bsd_utility.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_bsd_utility.h"/>
-                  <file name="sl_si91x_socket_callback_framework.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_callback_framework.h"/>
-                  <file name="sl_si91x_socket_constants.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_constants.h"/>
-                  <file name="sl_si91x_socket_types.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_types.h"/>
-                  <file name="sl_si91x_socket_utility.h" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc/sl_si91x_socket_utility.h"/>
-                </folder>
-              </folder>
-              <folder name="src">
-                <file name="sl_si91x_driver.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_si91x_driver.c"/>
-                <file name="sl_rsi_utility.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_rsi_utility.c"/>
-                <file name="sl_si91x_callback_framework.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/src/sl_si91x_callback_framework.c"/>
-              </folder>
-              <folder name="threading">
-                <file name="sli_si91x_multithreaded.c" uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/threading/sli_si91x_multithreaded.c"/>
               </folder>
               <folder name="host_mcu">
                 <folder name="si91x">
@@ -325,9 +296,7 @@
             <file name="sl_net_basic_profiles.c" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/src/sl_net_basic_profiles.c"/>
             <file name="sl_net_basic_certificate_store.c" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/src/sl_net_basic_certificate_store.c"/>
             <file name="sl_net.c" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/src/sl_net.c"/>
-          </folder>
-          <folder name="si91x">
-            <file name="sl_net_si91x.c" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/si91x/sl_net_si91x.c"/>
+            <file name="sl_net_for_lwip.c" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/src/sl_net_for_lwip.c"/>
           </folder>
           <folder name="inc">
             <file name="sl_net_constants.h" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/inc/sl_net_constants.h"/>
@@ -336,13 +305,10 @@
             <file name="sl_net_types.h" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/inc/sl_net_types.h"/>
             <file name="sl_net_wifi_types.h" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/inc/sl_net_wifi_types.h"/>
             <file name="sl_net.h" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/inc/sl_net.h"/>
+            <file name="sl_net_for_lwip.h" uri="studio:/sdk/extension/wiseconnect/components/service/network_manager/inc/sl_net_for_lwip.h"/>
           </folder>
         </folder>
         <folder name="bsd_socket">
-          <folder name="si91x_socket">
-            <file name="sl_si91x_bsd_socket.c" uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/si91x_socket/sl_si91x_bsd_socket.c"/>
-            <file name="sl_si91x_socket_support.h" uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/si91x_socket/sl_si91x_socket_support.h"/>
-          </folder>
           <folder name="inc">
             <file name="netdb.h" uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/inc/netdb.h"/>
             <file name="netinet_in.h" uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/inc/netinet_in.h"/>
@@ -555,15 +521,178 @@
             <file name="timers.c" uri="studio:/sdk/util/third_party/freertos/kernel/timers.c"/>
           </folder>
         </folder>
+        <folder name="lwip">
+          <folder name="lwip">
+            <folder name="src">
+              <folder name="api">
+                <file name="api_lib.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/api_lib.c"/>
+                <file name="api_msg.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/api_msg.c"/>
+                <file name="err.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/err.c"/>
+                <file name="if_api.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/if_api.c"/>
+                <file name="netbuf.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/netbuf.c"/>
+                <file name="netdb.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/netdb.c"/>
+                <file name="netifapi.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/netifapi.c"/>
+                <file name="sockets.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/sockets.c"/>
+                <file name="tcpip.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/api/tcpip.c"/>
+              </folder>
+              <folder name="core">
+                <folder name="ipv4">
+                  <file name="autoip.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/autoip.c"/>
+                  <file name="dhcp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/dhcp.c"/>
+                  <file name="etharp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/etharp.c"/>
+                  <file name="icmp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/icmp.c"/>
+                  <file name="igmp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/igmp.c"/>
+                  <file name="ip4.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/ip4.c"/>
+                  <file name="ip4_addr.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/ip4_addr.c"/>
+                  <file name="ip4_frag.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ipv4/ip4_frag.c"/>
+                </folder>
+                <file name="altcp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/altcp.c"/>
+                <file name="altcp_alloc.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/altcp_alloc.c"/>
+                <file name="altcp_tcp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/altcp_tcp.c"/>
+                <file name="def.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/def.c"/>
+                <file name="dns.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/dns.c"/>
+                <file name="inet_chksum.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/inet_chksum.c"/>
+                <file name="init.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/init.c"/>
+                <file name="ip.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/ip.c"/>
+                <file name="mem.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/mem.c"/>
+                <file name="memp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/memp.c"/>
+                <file name="netif.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/netif.c"/>
+                <file name="pbuf.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/pbuf.c"/>
+                <file name="raw.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/raw.c"/>
+                <file name="stats.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/stats.c"/>
+                <file name="sys.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/sys.c"/>
+                <file name="tcp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/tcp.c"/>
+                <file name="tcp_in.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/tcp_in.c"/>
+                <file name="tcp_out.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/tcp_out.c"/>
+                <file name="timeouts.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/timeouts.c"/>
+                <file name="udp.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/core/udp.c"/>
+              </folder>
+              <folder name="include">
+                <folder name="lwip">
+                  <folder name="priv">
+                    <file name="altcp_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/altcp_priv.h"/>
+                    <file name="api_msg.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/api_msg.h"/>
+                    <file name="memp_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/memp_priv.h"/>
+                    <file name="memp_std.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/memp_std.h"/>
+                    <file name="mem_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/mem_priv.h"/>
+                    <file name="nd6_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/nd6_priv.h"/>
+                    <file name="raw_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/raw_priv.h"/>
+                    <file name="sockets_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/sockets_priv.h"/>
+                    <file name="tcpip_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/tcpip_priv.h"/>
+                    <file name="tcp_priv.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/priv/tcp_priv.h"/>
+                  </folder>
+                  <folder name="prot">
+                    <file name="autoip.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/autoip.h"/>
+                    <file name="dhcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp.h"/>
+                    <file name="dhcp6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/dhcp6.h"/>
+                    <file name="dns.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/dns.h"/>
+                    <file name="etharp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/etharp.h"/>
+                    <file name="ethernet.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/ethernet.h"/>
+                    <file name="iana.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/iana.h"/>
+                    <file name="icmp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/icmp.h"/>
+                    <file name="icmp6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/icmp6.h"/>
+                    <file name="ieee.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/ieee.h"/>
+                    <file name="igmp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/igmp.h"/>
+                    <file name="ip.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/ip.h"/>
+                    <file name="ip4.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/ip4.h"/>
+                    <file name="ip6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/ip6.h"/>
+                    <file name="mld6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/mld6.h"/>
+                    <file name="nd6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/nd6.h"/>
+                    <file name="tcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/tcp.h"/>
+                    <file name="udp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/prot/udp.h"/>
+                  </folder>
+                  <file name="altcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/altcp.h"/>
+                  <file name="altcp_tcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/altcp_tcp.h"/>
+                  <file name="altcp_tls.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/altcp_tls.h"/>
+                  <file name="api.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/api.h"/>
+                  <file name="arch.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/arch.h"/>
+                  <file name="autoip.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/autoip.h"/>
+                  <file name="debug.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/debug.h"/>
+                  <file name="def.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/def.h"/>
+                  <file name="dhcp6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/dhcp6.h"/>
+                  <file name="dhcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/dhcp.h"/>
+                  <file name="dns.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/dns.h"/>
+                  <file name="err.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/err.h"/>
+                  <file name="errno.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/errno.h"/>
+                  <file name="etharp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/etharp.h"/>
+                  <file name="ethip6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ethip6.h"/>
+                  <file name="icmp6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/icmp6.h"/>
+                  <file name="icmp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/icmp.h"/>
+                  <file name="if_api.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/if_api.h"/>
+                  <file name="igmp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/igmp.h"/>
+                  <file name="inet_chksum.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/inet_chksum.h"/>
+                  <file name="inet.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/inet.h"/>
+                  <file name="init.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/init.h"/>
+                  <file name="init.h.cmake.in" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/init.h.cmake.in"/>
+                  <file name="ip4_addr.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip4_addr.h"/>
+                  <file name="ip4_frag.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip4_frag.h"/>
+                  <file name="ip4.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip4.h"/>
+                  <file name="ip6_addr.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip6_addr.h"/>
+                  <file name="ip6_frag.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip6_frag.h"/>
+                  <file name="ip6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip6.h"/>
+                  <file name="ip6_zone.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip6_zone.h"/>
+                  <file name="ip_addr.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip_addr.h"/>
+                  <file name="ip.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/ip.h"/>
+                  <file name="mem.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/mem.h"/>
+                  <file name="memp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/memp.h"/>
+                  <file name="mld6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/mld6.h"/>
+                  <file name="nd6.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/nd6.h"/>
+                  <file name="netbuf.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/netbuf.h"/>
+                  <file name="netdb.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/netdb.h"/>
+                  <file name="netifapi.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/netifapi.h"/>
+                  <file name="netif.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/netif.h"/>
+                  <file name="opt.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/opt.h"/>
+                  <file name="pbuf.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/pbuf.h"/>
+                  <file name="raw.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/raw.h"/>
+                  <file name="sio.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/sio.h"/>
+                  <file name="snmp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/snmp.h"/>
+                  <file name="sockets.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/sockets.h"/>
+                  <file name="stats.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/stats.h"/>
+                  <file name="sys.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/sys.h"/>
+                  <file name="tcpbase.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/tcpbase.h"/>
+                  <file name="tcp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/tcp.h"/>
+                  <file name="tcpip.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/tcpip.h"/>
+                  <file name="timeouts.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/timeouts.h"/>
+                  <file name="udp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/lwip/udp.h"/>
+                </folder>
+                <folder name="netif">
+                  <folder name="ppp">
+                    <file name="ppp_opts.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_opts.h"/>
+                    <file name="ppp_impl.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/netif/ppp/ppp_impl.h"/>
+                  </folder>
+                  <file name="etharp.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/netif/etharp.h"/>
+                  <file name="ethernet.h" uri="studio:/sdk/util/third_party/lwip/lwip/src/include/netif/ethernet.h"/>
+                </folder>
+              </folder>
+              <folder name="netif">
+                <file name="ethernet.c" uri="studio:/sdk/util/third_party/lwip/lwip/src/netif/ethernet.c"/>
+              </folder>
+            </folder>
+          </folder>
+          <folder name="lwip-contrib">
+            <folder name="ports">
+              <folder name="freertos">
+                <folder name="include">
+                  <folder name="arch">
+                    <file name="sys_arch.h" uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/sys_arch.h"/>
+                    <file name="cc.h" uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/cc.h"/>
+                    <file name="bpstruct.h" uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/bpstruct.h"/>
+                    <file name="epstruct.h" uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/include/arch/epstruct.h"/>
+                  </folder>
+                </folder>
+                <file name="sys_arch.c" uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/sys_arch.c"/>
+              </folder>
+            </folder>
+          </folder>
+        </folder>
       </folder>
     </folder>
   </folder>
-  <file name="app.c" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/app.c"/>
-  <file name="main.c" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/main.c"/>
-  <file name="app.h" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/app.h"/>
-  <file name="readme.md" linked="false" uri="studio:/sdk/extension/wiseconnect/examples/snippets/wlan/twt_use_case_remote_app/readme.md"/>
+  <file name="app.c" linked="false" uri="studio:/project/app.c"/>
+  <file name="main.c" linked="false" uri="studio:/project/main.c"/>
+  <file name="app.h" linked="false" uri="studio:/project/app.h"/>
+  <file name="readme.md" linked="false" uri="studio:/project/readme.md"/>
   <includePath uri="studio:/project/"/>
-  <includePath uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/si91x_socket"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/service/bsd_socket/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/mcu/drivers/cmsis_driver/CMSIS/Driver/Include"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/mcu/drivers/cmsis_driver/config"/>
@@ -575,11 +704,7 @@
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/mcu/drivers/peripheral_drivers/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/mcu/core/config"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/mcu/core/common/inc"/>
-  <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/asynchronous_socket/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/errno/inc"/>
-  <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/icmp"/>
-  <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/firmware_upgrade"/>
-  <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/socket/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/sl_net/inc"/>
   <includePath uri="studio:/sdk/extension/wiseconnect/components/device/silabs/si91x/wireless/ahb_interface/inc"/>
@@ -596,6 +721,8 @@
   <includePath uri="studio:/sdk/util/third_party/freertos/cmsis/Include"/>
   <includePath uri="studio:/sdk/util/third_party/freertos/kernel/include"/>
   <includePath uri="studio:/sdk/util/third_party/freertos/kernel/portable/GCC/ARM_CM4F"/>
+  <includePath uri="studio:/sdk/util/third_party/lwip/lwip/src/include"/>
+  <includePath uri="studio:/sdk/util/third_party/lwip/lwip-contrib/ports/freertos/include"/>
   <includePath uri="studio:/sdk/platform/service/mem_pool/inc"/>
   <includePath uri="studio:/sdk/platform/service/system/inc"/>
   <macroDefinition name="SL_SI91X_PRINT_DBG_LOG"/>
@@ -618,12 +745,10 @@
   <macroDefinition name="DEBUG_ENABLE" value="1"/>
   <macroDefinition name="DEBUG_UART" value="1"/>
   <macroDefinition name="ENABLE_DEBUG_MODULE" value="1"/>
-  <macroDefinition name="SLI_SI91X_OFFLOAD_NETWORK_STACK"/>
   <macroDefinition name="SI917"/>
   <macroDefinition name="SLI_SI91X_ENABLE_OS"/>
   <macroDefinition name="SLI_SI91X_MCU_INTERFACE"/>
   <macroDefinition name="TA_DEEP_SLEEP_COMMON_FLASH"/>
-  <macroDefinition name="SLI_SI91X_SOCKETS"/>
   <macroDefinition name="SLI_SI917"/>
   <macroDefinition name="SL_WIFI_COMPONENT_INCLUDED"/>
   <macroDefinition name="SL_BOARD_NAME" value="&quot;BRD4002A&quot;"/>

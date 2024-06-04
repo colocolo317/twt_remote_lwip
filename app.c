@@ -36,16 +36,22 @@
 #include "cmsis_os2.h"
 #include "string.h"
 #include "sl_wifi.h"
-#include "socket.h"
 #include "sl_utility.h"
 #include "sl_net.h"
 #include "sl_ip_types.h"
 #include "sl_string.h"
 #include "sl_net_si91x.h"
 #include "sl_net_wifi_types.h"
+#if AMPAK_USE_BSD_SOCKET
+#include "socket.h"
 #include "sl_si91x_socket_utility.h"
 #include "sl_si91x_socket_constants.h"
 #include "sl_si91x_socket.h"
+#else
+#include "lwip/sockets.h"
+#include "lwip/errno.h"
+#include "sl_net_for_lwip.h"
+#endif
 
 #ifdef SLI_SI91X_MCU_INTERFACE
 #include "rsi_power_save.h"
@@ -191,14 +197,14 @@ void application_start()
   ip_address.type = SL_IPV4;
   memcpy(&ip_address.ip.v4.bytes, &profile.ip.ip.v4.ip_address.bytes, sizeof(sl_ipv4_address_t));
   print_sl_ip_address(&ip_address);
-
+#if AMPAK_USE_BSD_SOCKET
   status = create_tcp_server();
   if (status != SL_STATUS_OK) {
     printf("Error while creating TCP server: 0x%lx \r\n", status);
     return;
   }
   printf("TCP Server is running\r\n");
-
+#endif
 #if !TCP_RECEIVE
   status = create_udp_server();
   if (status != SL_STATUS_OK) {
@@ -214,26 +220,32 @@ void application_start()
     return;
   }
 }
-
+#if AMPAK_USE_BSD_SOCKET
 sl_status_t create_tcp_server(void)
 {
   uint8_t max_tcp_retry             = RSI_MAX_TCP_RETRIES;
   struct sockaddr_in server_address = { 0 };
 
   int socket_return_value = 0;
-
+#if AMPAK_USE_BSD_SOCKET
   tcp_server_socket = sl_si91x_socket_async(AF_INET, SOCK_STREAM, IPPROTO_TCP, &data_callback);
+#endif
   if (tcp_server_socket < 0) {
     printf("TCP Socket creation failed with BSD error: %d\r\n", errno);
     return SL_STATUS_FAIL;
   }
   printf("\r\nTCP Server Socket ID : %d\r\n", tcp_server_socket);
-
+#if AMPAK_USE_BSD_SOCKET
   socket_return_value = sl_si91x_setsockopt_async(tcp_server_socket,
                                                   SOL_SOCKET,
+#if AMPAK_USE_BSD_SOCKET
                                                   SL_SI91X_SO_MAXRETRY,
+#else
+                                                  10,
+#endif
                                                   &max_tcp_retry,
                                                   sizeof(max_tcp_retry));
+#endif
   if (socket_return_value < 0) {
     printf("TCP Set Socket option failed with BSD error: %d\r\n", errno);
     close(tcp_server_socket);
@@ -272,6 +284,7 @@ sl_status_t create_tcp_server(void)
   return SL_STATUS_OK;
 }
 
+
 sl_status_t create_udp_server(void)
 {
   struct sockaddr_in server_address = { 0 };
@@ -298,7 +311,7 @@ sl_status_t create_udp_server(void)
 
   return SL_STATUS_OK;
 }
-
+#endif
 sl_status_t send_and_receive_data(void)
 {
   int status = SL_STATUS_OK;
@@ -307,11 +320,15 @@ sl_status_t send_and_receive_data(void)
       start_rtt  = osKernelGetTickCount();
       data_sent  = 1;
       data_recvd = 0;
+#if AMPAK_USE_BSD_SOCKET
       status     = sl_si91x_send(tcp_client_socket, (uint8_t *)"Stream Data", (sizeof("Stream Data") - 1), 0);
+#endif
       printf("\r\nSending Command\r\n");
       if (status < 0) {
         data_sent = 0;
+#if AMPAK_USE_BSD_SOCKET
         sl_si91x_shutdown(tcp_client_socket, SHUTDOWN_BY_ID);
+#endif
         printf("\r\nFailed to Send data to TCP Server, Error Code : 0x%x\r\n", status);
         return SL_STATUS_FAIL;
       }

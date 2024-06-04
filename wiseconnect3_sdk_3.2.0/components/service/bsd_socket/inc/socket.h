@@ -506,7 +506,10 @@ struct mmsghdr {
 	unsigned int msg_len;
 };
 
+#ifndef _STRUCT_TIMESPEC
+#define _STRUCT_TIMESPEC
 struct timespec;
+#endif
 
 #define	MSG_OOB			0x1	/* process out-of-band data */
 #define	MSG_PEEK		0x2	/* peek at incoming message */
