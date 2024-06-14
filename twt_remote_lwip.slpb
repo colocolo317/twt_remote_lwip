@@ -7,7 +7,7 @@ constants:
 - name: "project_name"
   value: "twt_remote_lwip"
 steps:
-- task: "create_rps_0_0_0_0_0_0_0_0_0_0_0"
+- task: "create_rps"
   output: "{{build_dir}}/{{project_name}}.rps"
   input: "{{build_dir}}/{{project_name}}.out"
   map: "{{build_dir}}/{{project_name}}.map"

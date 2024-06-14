@@ -214,11 +214,6 @@
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/common/inc/sl_cmsis_utility.h</locationURI>
 		</link>
 		<link>
-			<name>wiseconnect3_sdk_3.2.0/components/common/inc/sl_constants.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/common/inc/sl_constants.h</locationURI>
-		</link>
-		<link>
 			<name>wiseconnect3_sdk_3.2.0/components/common/inc/sl_ieee802_types.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/wiseconnect/components/common/inc/sl_ieee802_types.h</locationURI>

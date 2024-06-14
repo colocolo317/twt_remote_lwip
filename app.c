@@ -27,6 +27,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
+#define AMPAK_USE_LWIP 1
 #include <string.h>
 #include <stdint.h>
 #include "errno.h"
@@ -42,15 +43,16 @@
 #include "sl_string.h"
 #include "sl_net_si91x.h"
 #include "sl_net_wifi_types.h"
-#if AMPAK_USE_BSD_SOCKET
+#if AMPAK_USE_LWIP
+#include "lwip/sockets.h"
+#include "lwip/errno.h"
+#include "sl_net_for_lwip.h"
+#include "sl_si91x_driver.h"
+#else
 #include "socket.h"
 #include "sl_si91x_socket_utility.h"
 #include "sl_si91x_socket_constants.h"
 #include "sl_si91x_socket.h"
-#else
-#include "lwip/sockets.h"
-#include "lwip/errno.h"
-#include "sl_net_for_lwip.h"
 #endif
 
 #ifdef SLI_SI91X_MCU_INTERFACE
@@ -104,6 +106,10 @@ static const sl_wifi_device_configuration_t twt_client_configuration = {
                    .ble_ext_feature_bit_map    = 0,
                    .config_feature_bit_map     = SL_SI91X_FEAT_SLEEP_GPIO_SEL_BITMAP }
 };
+
+#if AMPAK_USE_LWIP
+static sl_net_wifi_lwip_context_t wifi_client_context;
+#endif
 
 /******************************************************
  *               Variable Definitions
@@ -172,14 +178,28 @@ void app_init(const void *unused)
 void application_start()
 {
   sl_status_t status;
-
+#if AMPAK_USE_LWIP
+  status = sl_net_init(SL_NET_WIFI_CLIENT_INTERFACE, &twt_client_configuration, &wifi_client_context, NULL);
+#else
   status = sl_net_init(SL_NET_WIFI_CLIENT_INTERFACE, &twt_client_configuration, NULL, NULL);
+#endif
   if (status != SL_STATUS_OK) {
     printf("Failed to start Wi-Fi client interface: 0x%lx\r\n", status);
     return;
   }
   printf("Wi-Fi Init Done\r\n");
 
+#if AMPAK_USE_LWIP
+#ifdef SLI_SI91X_MCU_INTERFACE
+  uint8_t xtal_enable = 1;
+  status = sl_si91x_m4_ta_secure_handshake(SL_SI91X_ENABLE_XTAL, 1, &xtal_enable, 0, NULL);
+  if (status != SL_STATUS_OK) {
+    printf("Failed to bring m4_ta_secure_handshake: 0x%lx\r\n", status);
+    return;
+  }
+  printf("m4_ta_secure_handshake Success\r\n");
+#endif
+#endif
   status = sl_net_up(SL_NET_WIFI_CLIENT_INTERFACE, 0);
   if (status != SL_STATUS_OK) {
     printf("Failed to bring Wi-Fi client interface up: 0x%lx\r\n", status);
@@ -197,7 +217,8 @@ void application_start()
   ip_address.type = SL_IPV4;
   memcpy(&ip_address.ip.v4.bytes, &profile.ip.ip.v4.ip_address.bytes, sizeof(sl_ipv4_address_t));
   print_sl_ip_address(&ip_address);
-#if AMPAK_USE_BSD_SOCKET
+
+#if !AMPAK_USE_LWIP
   status = create_tcp_server();
   if (status != SL_STATUS_OK) {
     printf("Error while creating TCP server: 0x%lx \r\n", status);
@@ -220,25 +241,28 @@ void application_start()
     return;
   }
 }
-#if AMPAK_USE_BSD_SOCKET
+
 sl_status_t create_tcp_server(void)
 {
   uint8_t max_tcp_retry             = RSI_MAX_TCP_RETRIES;
   struct sockaddr_in server_address = { 0 };
 
   int socket_return_value = 0;
-#if AMPAK_USE_BSD_SOCKET
+#if !AMPAK_USE_LWIP
   tcp_server_socket = sl_si91x_socket_async(AF_INET, SOCK_STREAM, IPPROTO_TCP, &data_callback);
+#else
+  tcp_server_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 #endif
+
   if (tcp_server_socket < 0) {
     printf("TCP Socket creation failed with BSD error: %d\r\n", errno);
     return SL_STATUS_FAIL;
   }
   printf("\r\nTCP Server Socket ID : %d\r\n", tcp_server_socket);
-#if AMPAK_USE_BSD_SOCKET
+#if !AMPAK_USE_LWIP
   socket_return_value = sl_si91x_setsockopt_async(tcp_server_socket,
                                                   SOL_SOCKET,
-#if AMPAK_USE_BSD_SOCKET
+#if !AMPAK_USE_LWIP
                                                   SL_SI91X_SO_MAXRETRY,
 #else
                                                   10,
@@ -311,7 +335,8 @@ sl_status_t create_udp_server(void)
 
   return SL_STATUS_OK;
 }
-#endif
+
+
 sl_status_t send_and_receive_data(void)
 {
   int status = SL_STATUS_OK;
@@ -320,13 +345,13 @@ sl_status_t send_and_receive_data(void)
       start_rtt  = osKernelGetTickCount();
       data_sent  = 1;
       data_recvd = 0;
-#if AMPAK_USE_BSD_SOCKET
+#if !AMPAK_USE_LWIP
       status     = sl_si91x_send(tcp_client_socket, (uint8_t *)"Stream Data", (sizeof("Stream Data") - 1), 0);
 #endif
       printf("\r\nSending Command\r\n");
       if (status < 0) {
         data_sent = 0;
-#if AMPAK_USE_BSD_SOCKET
+#if !AMPAK_USE_LWIP
         sl_si91x_shutdown(tcp_client_socket, SHUTDOWN_BY_ID);
 #endif
         printf("\r\nFailed to Send data to TCP Server, Error Code : 0x%x\r\n", status);
